@@ -1,0 +1,538 @@
+{
+  "schema_version": 1,
+  "problem": "RCPSP",
+  "generated_at_utc": "2026-08-08T04:13:52.481370+00:00",
+  "instance": {
+    "name": "j3014_6",
+    "path": "/home/23037696r/Documents/research/or_benchmark/rcpsp/instances/j30.sm/j3014_6.sm",
+    "jobs_including_dummies": 32,
+    "real_activities": 30,
+    "arcs": 48,
+    "renewable_resources": 4,
+    "capacities": [
+      30,
+      28,
+      26,
+      33
+    ],
+    "declared_horizon": 143,
+    "source_job": 1,
+    "sink_job": 32
+  },
+  "preprocessing": {
+    "critical_path_lower_bound": 34,
+    "resource_workload_lower_bound": 27,
+    "initial_lower_bound": 34,
+    "heuristic_upper_bound": 39,
+    "heuristic_rule": "critical_path",
+    "time_window_binary_count": 353
+  },
+  "status": "OPTIMAL",
+  "solver": {
+    "name": "Gurobi",
+    "version": "13.0.2",
+    "status_code": 2,
+    "status": "OPTIMAL",
+    "optimal": true,
+    "solution_count": 5,
+    "objective": 35.0,
+    "best_bound": 35.0,
+    "relative_gap": 0.0,
+    "runtime_seconds": 0.8741519451141357,
+    "node_count": 1.0,
+    "work": 0.32119946775294744,
+    "threads": 4,
+    "time_limit_seconds": 13500.0,
+    "requested_mip_gap": 0.0,
+    "interrupted_by_signal": null
+  },
+  "model": {
+    "formulation": "discrete_time_indexed_start",
+    "horizon": 39,
+    "binary_variables": 353,
+    "continuous_variables": 1,
+    "total_variables": 354,
+    "total_constraints": 232,
+    "constraint_counts": {
+      "start_once": 32,
+      "precedence": 48,
+      "resource": 120,
+      "completion": 32
+    },
+    "build_runtime_seconds": 0.06785061798291281
+  },
+  "solution": {
+    "available": true,
+    "makespan": 35,
+    "start_times": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 6,
+      "6": 3,
+      "7": 10,
+      "8": 3,
+      "9": 8,
+      "10": 4,
+      "11": 14,
+      "12": 10,
+      "13": 7,
+      "14": 5,
+      "15": 10,
+      "16": 12,
+      "17": 11,
+      "18": 16,
+      "19": 13,
+      "20": 16,
+      "21": 19,
+      "22": 21,
+      "23": 21,
+      "24": 21,
+      "25": 27,
+      "26": 28,
+      "27": 21,
+      "28": 27,
+      "29": 30,
+      "30": 29,
+      "31": 29,
+      "32": 35
+    },
+    "activities": [
+      {
+        "job": 1,
+        "is_dummy": true,
+        "start": 0,
+        "duration": 0,
+        "finish": 0,
+        "resource_demands": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "job": 2,
+        "is_dummy": false,
+        "start": 0,
+        "duration": 7,
+        "finish": 7,
+        "resource_demands": [
+          2,
+          2,
+          6,
+          2
+        ]
+      },
+      {
+        "job": 3,
+        "is_dummy": false,
+        "start": 0,
+        "duration": 3,
+        "finish": 3,
+        "resource_demands": [
+          10,
+          2,
+          5,
+          9
+        ]
+      },
+      {
+        "job": 4,
+        "is_dummy": false,
+        "start": 0,
+        "duration": 5,
+        "finish": 5,
+        "resource_demands": [
+          3,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "job": 5,
+        "is_dummy": false,
+        "start": 6,
+        "duration": 4,
+        "finish": 10,
+        "resource_demands": [
+          10,
+          5,
+          7,
+          7
+        ]
+      },
+      {
+        "job": 6,
+        "is_dummy": false,
+        "start": 3,
+        "duration": 3,
+        "finish": 6,
+        "resource_demands": [
+          5,
+          5,
+          8,
+          8
+        ]
+      },
+      {
+        "job": 7,
+        "is_dummy": false,
+        "start": 10,
+        "duration": 4,
+        "finish": 14,
+        "resource_demands": [
+          2,
+          1,
+          8,
+          9
+        ]
+      },
+      {
+        "job": 8,
+        "is_dummy": false,
+        "start": 3,
+        "duration": 1,
+        "finish": 4,
+        "resource_demands": [
+          6,
+          3,
+          6,
+          10
+        ]
+      },
+      {
+        "job": 9,
+        "is_dummy": false,
+        "start": 8,
+        "duration": 2,
+        "finish": 10,
+        "resource_demands": [
+          10,
+          10,
+          10,
+          6
+        ]
+      },
+      {
+        "job": 10,
+        "is_dummy": false,
+        "start": 4,
+        "duration": 4,
+        "finish": 8,
+        "resource_demands": [
+          6,
+          5,
+          6,
+          8
+        ]
+      },
+      {
+        "job": 11,
+        "is_dummy": false,
+        "start": 14,
+        "duration": 7,
+        "finish": 21,
+        "resource_demands": [
+          6,
+          8,
+          10,
+          1
+        ]
+      },
+      {
+        "job": 12,
+        "is_dummy": false,
+        "start": 10,
+        "duration": 1,
+        "finish": 11,
+        "resource_demands": [
+          9,
+          7,
+          1,
+          5
+        ]
+      },
+      {
+        "job": 13,
+        "is_dummy": false,
+        "start": 7,
+        "duration": 5,
+        "finish": 12,
+        "resource_demands": [
+          1,
+          4,
+          2,
+          3
+        ]
+      },
+      {
+        "job": 14,
+        "is_dummy": false,
+        "start": 5,
+        "duration": 7,
+        "finish": 12,
+        "resource_demands": [
+          9,
+          9,
+          6,
+          10
+        ]
+      },
+      {
+        "job": 15,
+        "is_dummy": false,
+        "start": 10,
+        "duration": 3,
+        "finish": 13,
+        "resource_demands": [
+          8,
+          5,
+          1,
+          2
+        ]
+      },
+      {
+        "job": 16,
+        "is_dummy": false,
+        "start": 12,
+        "duration": 4,
+        "finish": 16,
+        "resource_demands": [
+          6,
+          4,
+          6,
+          9
+        ]
+      },
+      {
+        "job": 17,
+        "is_dummy": false,
+        "start": 11,
+        "duration": 9,
+        "finish": 20,
+        "resource_demands": [
+          7,
+          6,
+          2,
+          1
+        ]
+      },
+      {
+        "job": 18,
+        "is_dummy": false,
+        "start": 16,
+        "duration": 5,
+        "finish": 21,
+        "resource_demands": [
+          10,
+          3,
+          4,
+          8
+        ]
+      },
+      {
+        "job": 19,
+        "is_dummy": false,
+        "start": 13,
+        "duration": 6,
+        "finish": 19,
+        "resource_demands": [
+          4,
+          7,
+          3,
+          8
+        ]
+      },
+      {
+        "job": 20,
+        "is_dummy": false,
+        "start": 16,
+        "duration": 5,
+        "finish": 21,
+        "resource_demands": [
+          2,
+          1,
+          7,
+          9
+        ]
+      },
+      {
+        "job": 21,
+        "is_dummy": false,
+        "start": 19,
+        "duration": 10,
+        "finish": 29,
+        "resource_demands": [
+          3,
+          4,
+          1,
+          6
+        ]
+      },
+      {
+        "job": 22,
+        "is_dummy": false,
+        "start": 21,
+        "duration": 6,
+        "finish": 27,
+        "resource_demands": [
+          8,
+          6,
+          3,
+          7
+        ]
+      },
+      {
+        "job": 23,
+        "is_dummy": false,
+        "start": 21,
+        "duration": 7,
+        "finish": 28,
+        "resource_demands": [
+          3,
+          1,
+          5,
+          8
+        ]
+      },
+      {
+        "job": 24,
+        "is_dummy": false,
+        "start": 21,
+        "duration": 5,
+        "finish": 26,
+        "resource_demands": [
+          5,
+          9,
+          1,
+          2
+        ]
+      },
+      {
+        "job": 25,
+        "is_dummy": false,
+        "start": 27,
+        "duration": 3,
+        "finish": 30,
+        "resource_demands": [
+          8,
+          3,
+          1,
+          5
+        ]
+      },
+      {
+        "job": 26,
+        "is_dummy": false,
+        "start": 28,
+        "duration": 1,
+        "finish": 29,
+        "resource_demands": [
+          7,
+          3,
+          5,
+          4
+        ]
+      },
+      {
+        "job": 27,
+        "is_dummy": false,
+        "start": 21,
+        "duration": 6,
+        "finish": 27,
+        "resource_demands": [
+          3,
+          4,
+          3,
+          10
+        ]
+      },
+      {
+        "job": 28,
+        "is_dummy": false,
+        "start": 27,
+        "duration": 3,
+        "finish": 30,
+        "resource_demands": [
+          10,
+          7,
+          3,
+          4
+        ]
+      },
+      {
+        "job": 29,
+        "is_dummy": false,
+        "start": 30,
+        "duration": 5,
+        "finish": 35,
+        "resource_demands": [
+          6,
+          10,
+          1,
+          10
+        ]
+      },
+      {
+        "job": 30,
+        "is_dummy": false,
+        "start": 29,
+        "duration": 6,
+        "finish": 35,
+        "resource_demands": [
+          1,
+          8,
+          5,
+          9
+        ]
+      },
+      {
+        "job": 31,
+        "is_dummy": false,
+        "start": 29,
+        "duration": 6,
+        "finish": 35,
+        "resource_demands": [
+          5,
+          8,
+          6,
+          3
+        ]
+      },
+      {
+        "job": 32,
+        "is_dummy": true,
+        "start": 35,
+        "duration": 0,
+        "finish": 35,
+        "resource_demands": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "validation": {
+      "is_feasible": true,
+      "makespan": 35,
+      "missing_jobs": [],
+      "precedence_violation_count": 0,
+      "precedence_violations": [],
+      "resource_violation_count": 0,
+      "resource_violations": [],
+      "resource_peaks": [
+        30,
+        28,
+        26,
+        33
+      ],
+      "source_starts_at_zero": true,
+      "sink_equals_makespan": true
+    }
+  },
+  "total_runtime_seconds": 0.9744851629948243
+}
