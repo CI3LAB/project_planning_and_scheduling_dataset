@@ -161,11 +161,11 @@ A repository-level BibTeX entry can be provided in the following form and should
 
 ```bibtex
 @misc{<citation_key>,
-  author       = {<Author Name(s)>},
-  title        = {RCPSP and Work Package Sizing Benchmark Collection},
+  author       = {Yaning ZHANG, Xiao LI},
+  title        = {project_planning_and_scheduling_dataset},
   year         = {2026},
-  howpublished = {\url{<GitHub repository URL>}},
-  note         = {Version <version>}
+  howpublished = {[\url{<GitHub repository URL>}](https://github.com/CI3LAB/project_planning_and_scheduling_dataset/)},
+  note         = {V1.0}
 }
 ```
 
