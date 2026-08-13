@@ -116,6 +116,55 @@ Where an instance is adapted from, generated according to, or otherwise material
 
 ---
 
+## Dataset Description
+
+This repository contains **1,590 benchmark instances** across two project optimization problems.
+
+### RCPSP Dataset
+
+The RCPSP instances are generated using **RanGen2** with four control parameters:
+
+| Parameter | Values |
+|---|---|
+| Number of tasks \(n\) | 20, 30, 40 |
+| Network structure \(I_2\) | 0.2, 0.5, 0.8 |
+| Resource factor \(RF\) | 0.25, 0.50, 0.75, 1.00 |
+| Resource strength \(RS\) | 0.20, 0.50, 0.70, 1.00 |
+
+Ten instances are generated for each parameter combination, giving
+
+\[
+3 \times 3 \times 4 \times 4 \times 10 = \mathbf{1,440}
+\]
+
+RCPSP instances.
+
+Here, \(I_2\) characterizes the serial/parallel structure of the project network: smaller values indicate more parallel networks, whereas larger values indicate more serial networks. \(RF\) controls the extent of resource usage, while \(RS\) controls resource-capacity tightness.
+
+### WPSP-SP Dataset (Still being supplemented)
+
+The WPSP-SP instances are generated following the framework of Li and Hall (2019), *Work Package Sizing and Project Performance*. The main parameters are:
+
+| Parameter | Values |
+|---|---|
+| Number of tasks \(n\) | 20, 30, 40 |
+| Network structure \(I_2\) | 0.2, 0.4, 0.6, 0.8, 1.0 |
+| Inactive-task percentage | 0.10 |
+
+Ten instances are generated for each parameter combination, resulting in
+
+\[
+3 \times 5 \times 1 \times 10 = \mathbf{150}
+\]
+
+WPSP-SP instances.
+
+The different \(I_2\) levels provide project networks ranging from highly parallel to fully serial, allowing the benchmark to capture how network structure affects work-package formation and project performance.
+
+---
+
+
+
 ## OR-Bench Alignment
 
 Selected problems in this repository are prepared for contribution to **OR-Bench: A Community Benchmark for LLMs on Optimization Modeling**.
