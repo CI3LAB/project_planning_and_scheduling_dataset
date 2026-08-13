@@ -164,7 +164,7 @@ A repository-level BibTeX entry can be provided in the following form and should
   author       = {Yaning ZHANG, Xiao LI},
   title        = {project_planning_and_scheduling_dataset},
   year         = {2026},
-  howpublished = {[\url{<GitHub repository URL>}](https://github.com/CI3LAB/project_planning_and_scheduling_dataset/)},
+  howpublished = {https://github.com/CI3LAB/project_planning_and_scheduling_dataset},
   note         = {V1.0}
 }
 ```
