@@ -148,13 +148,13 @@ The WPSP-SP instances are generated following the framework of Li and Hall (2019
 | Parameter | Values |
 |---|---|
 | Number of tasks \(n\) | 20, 30, 40 |
-| Network structure \(I_2\) | 0.2, 0.4, 0.6, 0.8, 1.0 |
-| Inactive-task percentage | 0.10 |
+| Network structure \(I_2\) | 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0 |
+| Inactive-task percentage | 0.1, 0.2, 0.3, 0.4, 0.5 |
 
 Ten instances are generated for each parameter combination, resulting in
 
 \[
-3 \times 5 \times 1 \times 10 = \mathbf{150}
+3 \times 10 \times 5 \times 10 = \mathbf{1500}
 \]
 
 WPSP-SP instances.
