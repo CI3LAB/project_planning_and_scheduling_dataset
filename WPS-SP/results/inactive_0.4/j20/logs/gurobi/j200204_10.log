@@ -1,0 +1,57 @@
+
+Gurobi 13.0.2 (linux64) logging started Sat Aug 15 05:14:58 2026
+
+Set parameter LogFile to value "/home/23037696r/Documents/research/or_benchmark/wp/results/inactive_0.4/j20/logs/gurobi/j200204_10.log"
+Set parameter NumericFocus to value 1
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (linux64 - "Ubuntu 22.04.3 LTS")
+
+CPU model: Intel Xeon Processor (Cascadelake), instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 46 physical cores, 46 logical processors, using up to 2 threads
+
+Non-default parameters:
+TimeLimit  13800
+MIPGap  1e-06
+NumericFocus  1
+Threads  2
+
+Optimize a model with 3715 rows, 2520 columns and 13351 nonzeros (Min)
+Model fingerprint: 0xbe037c57
+Model has 1460 linear objective coefficients and an objective constant of 6.8225925392643978e+02
+Variable types: 276 continuous, 2244 integer (2144 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+01]
+  Objective range  [1e-02, 4e+02]
+  Bounds range     [1e+00, 8e+01]
+  RHS range        [1e+00, 8e+01]
+
+Presolve removed 2942 rows and 1425 columns
+Presolve time: 0.22s
+Presolved: 773 rows, 1095 columns, 7058 nonzeros
+Variable types: 0 continuous, 1095 integer (830 binary)
+Found heuristic solution: objective 1716.8076760
+
+Root relaxation: objective 1.208953e+03, 455 iterations, 0.02 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1208.95273    0   60 1716.80768 1208.95273  29.6%     -    0s
+H    0     0                    1222.0159392 1208.95273  1.07%     -    0s
+H    0     0                    1221.9910732 1208.95273  1.07%     -    0s
+     0     0 1217.95525    0   36 1221.99107 1217.95525  0.33%     -    0s
+     0     0 1217.95525    0    1 1221.99107 1217.95525  0.33%     -    0s
+H    0     0                    1220.6347931 1217.95525  0.22%     -    0s
+     0     0     cutoff    0      1220.63479 1220.63479  0.00%     -    0s
+
+Cutting planes:
+  Implied bound: 1
+  MIR: 1
+  RLT: 1
+
+Explored 1 nodes (572 simplex iterations) in 0.42 seconds (0.11 work units)
+Thread count was 2 (of 46 available processors)
+
+Solution count 4: 1220.63 1221.99 1222.02 1716.81 
+
+Optimal solution found (tolerance 1.00e-06)
+Best objective 1.220634793073e+03, best bound 1.220634793073e+03, gap 0.0000%

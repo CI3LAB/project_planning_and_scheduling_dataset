@@ -1,0 +1,86 @@
+
+Gurobi 13.0.2 (linux64) logging started Tue Aug 11 11:46:56 2026
+
+Set parameter LogFile to value "/home/23037696r/Documents/research/or_benchmark/wp/results/inactive_0.2/j20/logs/gurobi/j200402_6.log"
+Set parameter NumericFocus to value 1
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (linux64 - "Ubuntu 22.04.3 LTS")
+
+CPU model: Intel Xeon Processor (Cascadelake), instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 46 physical cores, 46 logical processors, using up to 4 threads
+
+Non-default parameters:
+TimeLimit  13800
+MIPGap  1e-06
+NumericFocus  1
+Threads  4
+
+Optimize a model with 9675 rows, 4648 columns and 34052 nonzeros (Min)
+Model fingerprint: 0x35e273bc
+Model has 2872 linear objective coefficients and an objective constant of 4.2937869377899676e+02
+Variable types: 816 continuous, 3832 integer (3728 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [1e-02, 6e+02]
+  Bounds range     [1e+00, 1e+02]
+  RHS range        [1e+00, 1e+02]
+
+Presolve removed 7151 rows and 2078 columns
+Presolve time: 0.30s
+Presolved: 2524 rows, 2570 columns, 18814 nonzeros
+Variable types: 0 continuous, 2570 integer (1819 binary)
+Found heuristic solution: objective 1877.1896937
+
+Root relaxation: objective 1.113198e+03, 1023 iterations, 0.04 seconds (0.05 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1113.19795    0   26 1877.18969 1113.19795  40.7%     -    0s
+H    0     0                    1163.8056740 1113.19795  4.35%     -    0s
+     0     0 1115.36068    0   50 1163.80567 1115.36068  4.16%     -    0s
+H    0     0                    1161.5521494 1115.36192  3.98%     -    0s
+H    0     0                    1161.3657943 1115.36192  3.96%     -    0s
+H    0     0                    1159.7840889 1115.36192  3.83%     -    0s
+     0     0 1115.54620    0   95 1159.78409 1115.54620  3.81%     -    0s
+     0     0 1115.55925    0   57 1159.78409 1115.55925  3.81%     -    0s
+     0     0 1115.56015    0   57 1159.78409 1115.56015  3.81%     -    0s
+     0     0 1117.12617    0  212 1159.78409 1117.12617  3.68%     -    0s
+     0     0 1117.12617    0   32 1159.78409 1117.12617  3.68%     -    0s
+     0     0 1117.12617    0   33 1159.78409 1117.12617  3.68%     -    0s
+     0     0 1117.12617    0   23 1159.78409 1117.12617  3.68%     -    0s
+     0     0 1117.12617    0   23 1159.78409 1117.12617  3.68%     -    0s
+     0     0 1117.12617    0   23 1159.78409 1117.12617  3.68%     -    0s
+     0     0 1117.12617    0   23 1159.78409 1117.12617  3.68%     -    0s
+     0     0 1117.12617    0   23 1159.78409 1117.12617  3.68%     -    0s
+     0     0 1117.12617    0   14 1159.78409 1117.12617  3.68%     -    0s
+     0     0 1117.12617    0   26 1159.78409 1117.12617  3.68%     -    0s
+     0     0 1117.12617    0   25 1159.78409 1117.12617  3.68%     -    0s
+     0     0 1117.12617    0   25 1159.78409 1117.12617  3.68%     -    0s
+     0     0 1133.86630    0   44 1159.78409 1133.86630  2.23%     -    0s
+     0     0 1133.86630    0   32 1159.78409 1133.86630  2.23%     -    0s
+H    0     0                    1158.7489631 1133.86630  2.15%     -    0s
+     0     0 1156.12623    0   40 1158.74896 1156.12623  0.23%     -    0s
+     0     0 1156.65227    0   40 1158.74896 1156.65227  0.18%     -    0s
+     0     0 1157.22677    0   37 1158.74896 1157.22677  0.13%     -    0s
+     0     0 1157.22677    0   37 1158.74896 1157.22677  0.13%     -    0s
+
+Cutting planes:
+  Learned: 3
+  Gomory: 17
+  Cover: 6
+  Implied bound: 14
+  Clique: 3
+  MIR: 4
+  StrongCG: 2
+  Flow cover: 1
+  GUB cover: 1
+  RLT: 2
+  Relax-and-lift: 6
+
+Explored 1 nodes (2584 simplex iterations) in 0.86 seconds (0.61 work units)
+Thread count was 4 (of 46 available processors)
+
+Solution count 10: 1158.75 1159.78 1159.78 ... 1161.55
+
+Optimal solution found (tolerance 1.00e-06)
+Best objective 1.158748963139e+03, best bound 1.158748963139e+03, gap 0.0000%

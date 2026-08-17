@@ -1,0 +1,138 @@
+Slurm job ID    : 2148
+Array task ID   : 27
+Host            : 23037696r-i7809a0b3cd
+Start time      : 2026-08-13T22:54:52+08:00
+Instance        : /home/23037696r/Documents/research/or_benchmark/wp/instances/inactive_0.3/j30/j300303_7.sm
+Output JSON     : /home/23037696r/Documents/research/or_benchmark/wp/results/inactive_0.3/j30/j300303_7.json
+Gurobi log      : /home/23037696r/Documents/research/or_benchmark/wp/results/inactive_0.3/j30/logs/gurobi/j300303_7.log
+Allocated CPUs  : 2
+Running with command-line arguments
+-----------------------------------
+Instance file: /home/23037696r/Documents/research/or_benchmark/wp/instances/inactive_0.3/j30/j300303_7.sm
+Instance summary
+----------------
+Tasks:          32
+Active tasks:   21
+Inactive tasks: 11
+Arcs:           54
+Total duration: 189
+Total work:     296
+Active work:    195
+Delta (singleton critical-path makespan): 43
+Chosen deadline: 48
+Feasible by singleton schedule: yes
+Deadline rule: automatic: d = ceil(1.1 * Delta) = 48
+Set parameter Username
+Set parameter LicenseID to value 2851961
+Academic license - for non-commercial use only - expires 2027-08-07
+Set parameter MIPGap to value 1e-06
+Set parameter TimeLimit to value 13800
+Set parameter Threads to value 2
+Set parameter LogFile to value "/home/23037696r/Documents/research/or_benchmark/wp/results/inactive_0.3/j30/logs/gurobi/j300303_7.log"
+Set parameter NumericFocus to value 1
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (linux64 - "Ubuntu 22.04.3 LTS")
+
+CPU model: Intel Xeon Processor (Cascadelake), instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 46 physical cores, 46 logical processors, using up to 2 threads
+
+Non-default parameters:
+TimeLimit  13800
+MIPGap  1e-06
+NumericFocus  1
+Threads  2
+
+Optimize a model with 14864 rows, 8316 columns and 56125 nonzeros (Min)
+Model fingerprint: 0xcd956361
+Model has 5556 linear objective coefficients and an objective constant of 9.8482544339790934e+02
+Variable types: 1029 continuous, 7287 integer (7138 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e-02, 1e+03]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 2e+02]
+
+Presolve removed 11715 rows and 3186 columns
+Presolve time: 0.68s
+Presolved: 3149 rows, 5130 columns, 21516 nonzeros
+Variable types: 0 continuous, 5130 integer (4081 binary)
+Found heuristic solution: objective 3179.8471843
+
+Root relaxation: objective 2.062311e+03, 1365 iterations, 0.10 seconds (0.08 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2062.31103    0   25 3179.84718 2062.31103  35.1%     -    0s
+H    0     0                    2191.1178391 2062.31103  5.88%     -    1s
+H    0     0                    2186.6400154 2062.31103  5.69%     -    1s
+     0     0 2063.44106    0   35 2186.64002 2063.44106  5.63%     -    1s
+H    0     0                    2154.9206869 2063.44106  4.25%     -    1s
+H    0     0                    2154.5905882 2063.44106  4.23%     -    1s
+H    0     0                    2148.9991056 2063.44106  3.98%     -    1s
+     0     0 2063.44106    0   36 2148.99911 2063.44106  3.98%     -    1s
+     0     0 2065.14601    0   49 2148.99911 2065.14601  3.90%     -    1s
+     0     0 2065.14622    0   49 2148.99911 2065.14622  3.90%     -    1s
+     0     0 2066.81917    0   36 2148.99911 2066.81917  3.82%     -    2s
+     0     0 2067.25755    0   47 2148.99911 2067.25755  3.80%     -    2s
+     0     0 2067.25755    0   41 2148.99911 2067.25755  3.80%     -    2s
+     0     0 2068.75485    0   58 2148.99911 2068.75485  3.73%     -    2s
+     0     0 2068.76962    0   58 2148.99911 2068.76962  3.73%     -    3s
+     0     0 2068.76962    0   58 2148.99911 2068.76962  3.73%     -    3s
+     0     0 2069.38852    0   44 2148.99911 2069.38852  3.70%     -    3s
+H    0     0                    2148.8886552 2069.38890  3.70%     -    3s
+H    0     0                    2147.0415182 2069.38890  3.62%     -    3s
+H    0     0                    2145.9534159 2069.38890  3.57%     -    3s
+H    0     0                    2145.7993461 2069.38890  3.56%     -    3s
+     0     0 2070.18395    0   57 2145.79935 2070.18395  3.52%     -    3s
+     0     0 2070.18868    0   56 2145.79935 2070.18868  3.52%     -    3s
+     0     0 2070.18950    0   65 2145.79935 2070.18950  3.52%     -    3s
+H    0     0                    2143.2823980 2070.18972  3.41%     -    4s
+     0     0 2070.18972    0   67 2143.28240 2070.18972  3.41%     -    4s
+     0     0 2070.18972    0   65 2143.28240 2070.18972  3.41%     -    4s
+     0     0 2070.19029    0   65 2143.28240 2070.19029  3.41%     -    4s
+     0     0 2070.28576    0   65 2143.28240 2070.28576  3.41%     -    4s
+     0     0 2070.28576    0   65 2143.28240 2070.28576  3.41%     -    5s
+     0     0 2070.28576    0   61 2143.28240 2070.28576  3.41%     -    5s
+     0     2 2070.28576    0   61 2143.28240 2070.28576  3.41%     -    5s
+H   47    44                    2143.1213483 2070.28576  3.40%  71.3    7s
+    99    51 2076.82950    3   39 2143.12135 2070.32976  3.40%  68.0   10s
+   501   346 2110.09488   26   41 2143.12135 2075.60663  3.15%  33.7   15s
+   944   567 2113.26711   41   44 2143.12135 2103.62218  1.84%  31.9   20s
+  1587   485 2128.08211   22   41 2143.12135 2126.34307  0.78%  32.2   25s
+
+Explored 1666 nodes (55858 simplex iterations) in 25.54 seconds (6.56 work units)
+Thread count was 2 (of 46 available processors)
+
+Solution count 10: 2143.12 2143.12 2143.28 ... 2149
+
+Optimal solution found (tolerance 1.00e-06)
+Best objective 2.143121348281e+03, best bound 2.143121348281e+03, gap 0.0000%
+
+Solve summary
+-------------
+Status code:       2
+Objective:         2143.1213482808744
+Objective bound:   2143.1213482808744
+MIP gap:           0.0
+Has cycle:         False
+Is acyclic:        True
+Packages selected: 2 active packages
+
+Packages
+--------
+   I1 | inactive_singleton | S=  0, C=  0, x=  0 | tasks=[1]
+  I30 | inactive_singleton | S=  0, C=  2, x=  2 | tasks=[30]
+  I21 | inactive_singleton | S=  0, C=  4, x=  6 | tasks=[21]
+  I28 | inactive_singleton | S=  0, C=  7, x= 10 | tasks=[28]
+  I19 | inactive_singleton | S=  0, C=  8, x= 13 | tasks=[19]
+  I27 | inactive_singleton | S=  0, C=  8, x= 16 | tasks=[27]
+  I25 | inactive_singleton | S=  0, C=  9, x= 16 | tasks=[25]
+   A1 | active             | S=  0, C= 27, x=144 | tasks=[2, 3, 4, 5, 6, 7, 11, 14, 16, 17, 23, 24, 26, 31]
+  I15 | inactive_singleton | S= 27, C= 32, x= 10 | tasks=[15]
+  I13 | inactive_singleton | S= 27, C= 35, x= 16 | tasks=[13]
+  I18 | inactive_singleton | S= 27, C= 37, x= 12 | tasks=[18]
+   A2 | active             | S= 27, C= 43, x= 51 | tasks=[8, 9, 10, 12, 20, 22, 29]
+  I32 | inactive_singleton | S= 48, C= 48, x=  0 | tasks=[32]
+
+Solution JSON saved to: /home/23037696r/Documents/research/or_benchmark/wp/results/inactive_0.3/j30/j300303_7.json
+Finish time     : 2026-08-13T22:55:20+08:00

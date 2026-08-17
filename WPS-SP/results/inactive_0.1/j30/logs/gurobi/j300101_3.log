@@ -1,0 +1,62 @@
+
+Gurobi 13.0.2 (linux64) logging started Mon Aug 10 19:50:57 2026
+
+Set parameter LogFile to value "/home/23037696r/Documents/research/or_benchmark/wp/results/inactivate_0.1/j30/logs/gurobi/j300101_3.log"
+Set parameter NumericFocus to value 1
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (linux64 - "Ubuntu 22.04.3 LTS")
+
+CPU model: Intel Xeon Processor (Cascadelake), instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 46 physical cores, 46 logical processors, using up to 4 threads
+
+Non-default parameters:
+TimeLimit  82800
+MIPGap  1e-06
+NumericFocus  1
+Threads  4
+
+Optimize a model with 12865 rows, 7999 columns and 55486 nonzeros (Min)
+Model fingerprint: 0x29e5efdf
+Model has 5631 linear objective coefficients and an objective constant of 2.4572405408357173e+02
+Variable types: 405 continuous, 7594 integer (7439 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e-02, 1e+03]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 2e+02]
+
+Presolve removed 10480 rows and 4171 columns
+Presolve time: 0.35s
+Presolved: 2385 rows, 3828 columns, 22067 nonzeros
+Variable types: 0 continuous, 3828 integer (3373 binary)
+Found heuristic solution: objective 2570.8123447
+
+Root relaxation: objective 1.252008e+03, 984 iterations, 0.05 seconds (0.06 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1252.00769    0   71 2570.81234 1252.00769  51.3%     -    0s
+H    0     0                    1279.4672446 1252.00769  2.15%     -    0s
+H    0     0                    1277.5965422 1252.00769  2.00%     -    0s
+     0     0 1257.69748    0   73 1277.59654 1257.69748  1.56%     -    0s
+     0     0 1257.69748    0   55 1277.59654 1257.69748  1.56%     -    0s
+     0     0 1257.69748    0   47 1277.59654 1257.69748  1.56%     -    0s
+     0     0 1277.13521    0  118 1277.59654 1277.13521  0.04%     -    0s
+
+Cutting planes:
+  Cover: 3
+  Implied bound: 9
+  Clique: 9
+  MIR: 1
+  GUB cover: 10
+  RLT: 4
+  Relax-and-lift: 3
+  BQP: 4
+
+Explored 1 nodes (1778 simplex iterations) in 0.69 seconds (0.61 work units)
+Thread count was 4 (of 46 available processors)
+
+Solution count 5: 1277.6 1277.6 1279.47 ... 2570.81
+
+Optimal solution found (tolerance 1.00e-06)
+Best objective 1.277596542240e+03, best bound 1.277596542240e+03, gap 0.0000%

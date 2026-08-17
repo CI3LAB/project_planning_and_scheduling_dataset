@@ -1,0 +1,87 @@
+
+Gurobi 13.0.2 (linux64) logging started Sat Aug 15 05:22:35 2026
+
+Set parameter LogFile to value "/home/23037696r/Documents/research/or_benchmark/wp/results/inactive_0.4/j20/logs/gurobi/j200804_10.log"
+Set parameter NumericFocus to value 1
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (linux64 - "Ubuntu 22.04.3 LTS")
+
+CPU model: Intel Xeon Processor (Cascadelake), instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 46 physical cores, 46 logical processors, using up to 2 threads
+
+Non-default parameters:
+TimeLimit  13800
+MIPGap  1e-06
+NumericFocus  1
+Threads  2
+
+Optimize a model with 8207 rows, 6488 columns and 29954 nonzeros (Min)
+Model fingerprint: 0x8281290d
+Model has 3972 linear objective coefficients and an objective constant of 8.4338653143097793e+02
+Variable types: 1524 continuous, 4964 integer (4864 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [1e-02, 6e+02]
+  Bounds range     [1e+00, 1e+02]
+  RHS range        [1e+00, 1e+02]
+
+Presolve removed 6649 rows and 4653 columns
+Presolve time: 0.64s
+Presolved: 1558 rows, 1835 columns, 10000 nonzeros
+Variable types: 0 continuous, 1835 integer (1171 binary)
+Found heuristic solution: objective 2191.8834768
+
+Root relaxation: objective 1.662679e+03, 553 iterations, 0.03 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1662.67879    0   60 2191.88348 1662.67879  24.1%     -    0s
+     0     0 1680.26859    0   49 2191.88348 1680.26859  23.3%     -    1s
+     0     0 1680.32449    0   49 2191.88348 1680.32449  23.3%     -    1s
+     0     0 1692.98047    0   59 2191.88348 1692.98047  22.8%     -    1s
+H    0     0                    1977.1856525 1694.19238  14.3%     -    1s
+     0     0 1694.19238    0   58 1977.18565 1694.19238  14.3%     -    1s
+     0     0 1706.19833    0   69 1977.18565 1706.19833  13.7%     -    1s
+H    0     0                    1764.8318338 1706.30355  3.32%     -    1s
+     0     0 1706.30355    0   70 1764.83183 1706.30355  3.32%     -    1s
+     0     0 1707.23269    0   57 1764.83183 1707.23269  3.26%     -    1s
+     0     0 1707.44810    0   97 1764.83183 1707.44810  3.25%     -    1s
+     0     0 1707.44810    0   86 1764.83183 1707.44810  3.25%     -    1s
+     0     0 1708.02735    0   88 1764.83183 1708.02735  3.22%     -    2s
+     0     0 1708.12970    0   96 1764.83183 1708.12970  3.21%     -    2s
+     0     0 1708.13026    0   97 1764.83183 1708.13026  3.21%     -    2s
+     0     0 1709.51361    0   85 1764.83183 1709.51361  3.13%     -    2s
+     0     0 1709.56752    0   91 1764.83183 1709.56752  3.13%     -    2s
+     0     0 1709.56752    0   92 1764.83183 1709.56752  3.13%     -    2s
+     0     0 1709.72496    0   93 1764.83183 1709.72496  3.12%     -    2s
+     0     0 1709.73024    0   91 1764.83183 1709.73024  3.12%     -    2s
+     0     0 1709.78779    0   89 1764.83183 1709.78779  3.12%     -    2s
+     0     0 1709.86775    0   90 1764.83183 1709.86775  3.11%     -    2s
+     0     0 1709.86775    0   91 1764.83183 1709.86775  3.11%     -    2s
+     0     0 1709.94155    0   87 1764.83183 1709.94155  3.11%     -    2s
+     0     0 1709.96008    0   87 1764.83183 1709.96008  3.11%     -    2s
+     0     0 1709.96008    0   87 1764.83183 1709.96008  3.11%     -    2s
+     0     0 1709.96008    0   84 1764.83183 1709.96008  3.11%     -    3s
+     0     2 1713.29764    0   84 1764.83183 1713.29764  2.92%     -    3s
+   303    60 infeasible   10      1764.83183 1733.66445  1.77%  26.3    5s
+
+Cutting planes:
+  Learned: 5
+  Gomory: 2
+  Cover: 29
+  Implied bound: 111
+  Clique: 13
+  MIR: 7
+  StrongCG: 4
+  GUB cover: 4
+  RLT: 3
+  Relax-and-lift: 18
+  BQP: 2
+
+Explored 717 nodes (16549 simplex iterations) in 6.75 seconds (1.47 work units)
+Thread count was 2 (of 46 available processors)
+
+Solution count 3: 1764.83 1977.19 2191.88 
+
+Optimal solution found (tolerance 1.00e-06)
+Best objective 1.764831833806e+03, best bound 1.764831833806e+03, gap 0.0000%

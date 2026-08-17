@@ -1,0 +1,3 @@
+[2026-08-13T11:18:31.559] error: *** STEP 1975.0 ON 23037696r-i7809a0b3cd CANCELLED AT 2026-08-13T11:18:31 DUE to SIGNAL Terminated ***
+[2026-08-13T11:18:31.560] error: *** JOB 1975 ON 23037696r-i7809a0b3cd CANCELLED AT 2026-08-13T11:18:31 DUE to SIGNAL Terminated ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.

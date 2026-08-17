@@ -1,0 +1,114 @@
+
+Gurobi 13.0.2 (linux64) logging started Thu Aug 13 22:50:09 2026
+
+Set parameter LogFile to value "/home/23037696r/Documents/research/or_benchmark/wp/results/inactive_0.3/j20/logs/gurobi/j200203_10.log"
+Set parameter NumericFocus to value 1
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (linux64 - "Ubuntu 22.04.3 LTS")
+
+CPU model: Intel Xeon Processor (Cascadelake), instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 46 physical cores, 46 logical processors, using up to 2 threads
+
+Non-default parameters:
+TimeLimit  13800
+MIPGap  1e-06
+NumericFocus  1
+Threads  2
+
+Optimize a model with 5736 rows, 3310 columns and 21129 nonzeros (Min)
+Model fingerprint: 0x2ca7ab0e
+Model has 2148 linear objective coefficients and an objective constant of 4.7559702242357417e+02
+Variable types: 322 continuous, 2988 integer (2886 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [1e-02, 6e+02]
+  Bounds range     [1e+00, 1e+02]
+  RHS range        [1e+00, 1e+02]
+
+Presolve removed 4602 rows and 1734 columns
+Presolve time: 0.19s
+Presolved: 1134 rows, 1576 columns, 10268 nonzeros
+Variable types: 0 continuous, 1576 integer (1271 binary)
+Found heuristic solution: objective 1805.7748110
+
+Root relaxation: objective 1.222017e+03, 383 iterations, 0.01 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1222.01698    0   47 1805.77481 1222.01698  32.3%     -    0s
+     0     0 1226.52515    0   45 1805.77481 1226.52515  32.1%     -    0s
+H    0     0                    1804.2685367 1226.52515  32.0%     -    0s
+     0     0 1226.70610    0   44 1804.26854 1226.70610  32.0%     -    0s
+H    0     0                    1803.8943326 1226.70619  32.0%     -    0s
+     0     0 1226.70619    0   44 1803.89433 1226.70619  32.0%     -    0s
+     0     0 1226.84300    0   55 1803.89433 1226.84300  32.0%     -    0s
+     0     0 1226.86228    0   56 1803.89433 1226.86228  32.0%     -    0s
+     0     0 1226.86229    0   60 1803.89433 1226.86229  32.0%     -    0s
+     0     0 1227.54740    0   65 1803.89433 1227.54740  32.0%     -    0s
+     0     0 1227.66528    0   71 1803.89433 1227.66528  31.9%     -    0s
+     0     0 1227.70462    0   76 1803.89433 1227.70462  31.9%     -    0s
+     0     0 1227.70554    0   77 1803.89433 1227.70554  31.9%     -    0s
+     0     0 1228.13712    0   77 1803.89433 1228.13712  31.9%     -    0s
+     0     0 1228.15360    0   78 1803.89433 1228.15360  31.9%     -    0s
+     0     0 1228.16236    0   83 1803.89433 1228.16236  31.9%     -    0s
+     0     0 1228.16475    0   83 1803.89433 1228.16475  31.9%     -    0s
+     0     0 1228.18328    0   78 1803.89433 1228.18328  31.9%     -    0s
+H    0     0                    1364.2802167 1228.22603  10.0%     -    0s
+H    0     0                    1362.3372441 1228.22603  9.84%     -    0s
+     0     0 1228.22603    0   74 1362.33724 1228.22603  9.84%     -    0s
+     0     0 1228.22603    0   74 1362.33724 1228.22603  9.84%     -    0s
+     0     0 1228.22603    0   75 1362.33724 1228.22603  9.84%     -    0s
+     0     0 1228.22603    0   71 1362.33724 1228.22603  9.84%     -    0s
+     0     0 1228.22961    0   80 1362.33724 1228.22961  9.84%     -    0s
+H    0     0                    1306.2996311 1228.22987  5.98%     -    0s
+     0     0 1228.23691    0   81 1306.29963 1228.23691  5.98%     -    0s
+     0     0 1228.24250    0   81 1306.29963 1228.24250  5.98%     -    0s
+     0     0 1228.24333    0   81 1306.29963 1228.24333  5.98%     -    0s
+     0     0 1228.28571    0   83 1306.29963 1228.28571  5.97%     -    0s
+     0     0 1228.30842    0   81 1306.29963 1228.30842  5.97%     -    0s
+     0     0 1228.30883    0   84 1306.29963 1228.30883  5.97%     -    0s
+     0     0 1228.31022    0   87 1306.29963 1228.31022  5.97%     -    0s
+H    0     0                    1305.6291138 1228.31782  5.92%     -    0s
+H    0     0                    1305.3876148 1228.31782  5.90%     -    0s
+H    0     0                    1305.3636114 1228.31782  5.90%     -    0s
+     0     0 1228.31782    0   88 1305.36361 1228.31782  5.90%     -    0s
+     0     0 1228.31782    0   88 1305.36361 1228.31782  5.90%     -    0s
+     0     0 1228.32582    0   87 1305.36361 1228.32582  5.90%     -    0s
+     0     0 1228.32961    0   86 1305.36361 1228.32961  5.90%     -    0s
+     0     0 1228.33201    0   89 1305.36361 1228.33201  5.90%     -    0s
+     0     0 1228.33201    0   89 1305.36361 1228.33201  5.90%     -    0s
+     0     0 1228.33209    0   91 1305.36361 1228.33209  5.90%     -    0s
+     0     0 1228.35799    0   87 1305.36361 1228.35799  5.90%     -    0s
+     0     0 1228.36018    0   87 1305.36361 1228.36018  5.90%     -    0s
+     0     0 1228.36018    0   87 1305.36361 1228.36018  5.90%     -    0s
+     0     0 1228.36018    0   81 1305.36361 1228.36018  5.90%     -    1s
+     0     2 1228.45532    0   79 1305.36361 1228.45532  5.89%     -    1s
+H   27    29                    1305.2050804 1228.45532  5.88%  29.4    1s
+H   61    50                    1304.3962268 1228.45532  5.82%  22.7    1s
+H   91    90                    1304.3462518 1228.45532  5.82%  21.7    1s
+H  101    90                    1303.7639018 1228.45532  5.78%  20.0    1s
+H  238   130                    1253.9678935 1228.45532  2.03%  15.3    1s
+H  251   128                    1251.0080339 1228.45532  1.80%  14.9    1s
+
+Cutting planes:
+  Gomory: 3
+  Lift-and-project: 1
+  Cover: 64
+  Implied bound: 73
+  Clique: 23
+  MIR: 62
+  StrongCG: 15
+  GUB cover: 25
+  Inf proof: 2
+  Zero half: 6
+  Mod-K: 1
+  RLT: 18
+  Relax-and-lift: 23
+
+Explored 807 nodes (11678 simplex iterations) in 1.83 seconds (1.23 work units)
+Thread count was 2 (of 46 available processors)
+
+Solution count 10: 1251.01 1253.97 1303.76 ... 1306.3
+
+Optimal solution found (tolerance 1.00e-06)
+Best objective 1.251008033946e+03, best bound 1.251008033946e+03, gap 0.0000%

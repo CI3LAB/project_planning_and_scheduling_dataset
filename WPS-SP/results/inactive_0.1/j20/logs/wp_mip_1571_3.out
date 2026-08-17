@@ -1,0 +1,97 @@
+Slurm job ID    : 1575
+Array task ID   : 3
+Host            : 23037696r-i7809a0b3cd
+Start time      : 2026-08-10T19:47:37+08:00
+Instance        : /home/23037696r/Documents/research/or_benchmark/wp/instances/inactive_0.1/j20_supp/j200101_3.sm
+Output JSON     : /home/23037696r/Documents/research/or_benchmark/wp/results/inactivate_0.1/j20//j200101_3.json
+Gurobi log      : /home/23037696r/Documents/research/or_benchmark/wp/results/inactivate_0.1/j20//logs/gurobi/j200101_3.log
+Allocated CPUs  : 4
+Running with command-line arguments
+-----------------------------------
+Instance file: /home/23037696r/Documents/research/or_benchmark/wp/instances/inactive_0.1/j20_supp/j200101_3.sm
+Instance summary
+----------------
+Tasks:          22
+Active tasks:   18
+Inactive tasks: 4
+Arcs:           37
+Total duration: 102
+Total work:     152
+Active work:    133
+Delta (singleton critical-path makespan): 15
+Chosen deadline: 17
+Feasible by singleton schedule: yes
+Deadline rule: automatic: d = ceil(1.1 * Delta) = 17
+Set parameter Username
+Set parameter LicenseID to value 2851961
+Academic license - for non-commercial use only - expires 2027-08-07
+Set parameter MIPGap to value 1e-06
+Set parameter TimeLimit to value 82800
+Set parameter Threads to value 4
+Set parameter LogFile to value "/home/23037696r/Documents/research/or_benchmark/wp/results/inactivate_0.1/j20/logs/gurobi/j200101_3.log"
+Set parameter NumericFocus to value 1
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (linux64 - "Ubuntu 22.04.3 LTS")
+
+CPU model: Intel Xeon Processor (Cascadelake), instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 46 physical cores, 46 logical processors, using up to 4 threads
+
+Non-default parameters:
+TimeLimit  82800
+MIPGap  1e-06
+NumericFocus  1
+Threads  4
+
+Optimize a model with 8234 rows, 4042 columns and 31025 nonzeros (Min)
+Model fingerprint: 0xe7b95ad5
+Model has 2752 linear objective coefficients and an objective constant of 2.0247025956743269e+02
+Variable types: 324 continuous, 3718 integer (3612 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [1e-02, 7e+02]
+  Bounds range     [1e+00, 1e+02]
+  RHS range        [1e+00, 1e+02]
+
+Presolve removed 6300 rows and 2040 columns
+Presolve time: 0.26s
+Presolved: 1934 rows, 2002 columns, 17638 nonzeros
+Variable types: 0 continuous, 2002 integer (1636 binary)
+Found heuristic solution: objective 1795.6085117
+
+Root relaxation: objective 9.199000e+02, 1144 iterations, 0.04 seconds (0.05 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  919.89997    0   62 1795.60851  919.89997  48.8%     -    0s
+H    0     0                     932.6510081  919.89997  1.37%     -    0s
+     0     0  921.68751    0   78  932.65101  921.68751  1.18%     -    0s
+     0     0     cutoff    0       932.65101  932.65101  0.00%     -    0s
+
+Explored 1 nodes (1309 simplex iterations) in 0.47 seconds (0.37 work units)
+Thread count was 4 (of 46 available processors)
+
+Solution count 2: 932.651 1795.61 
+
+Optimal solution found (tolerance 1.00e-06)
+Best objective 9.326510080968e+02, best bound 9.326510080968e+02, gap 0.0000%
+
+Solve summary
+-------------
+Status code:       2
+Objective:         932.6510080968422
+Objective bound:   932.6510080968422
+MIP gap:           0.0
+Has cycle:         False
+Is acyclic:        True
+Packages selected: 1 active packages
+
+Packages
+--------
+   I1 | inactive_singleton | S=  0, C=  0, x=  0 | tasks=[1]
+  I17 | inactive_singleton | S=  0, C=  5, x= 10 | tasks=[17]
+  I20 | inactive_singleton | S=  0, C=  8, x=  9 | tasks=[20]
+   A1 | active             | S=  0, C= 15, x=133 | tasks=[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 21]
+  I22 | inactive_singleton | S= 15, C= 15, x=  0 | tasks=[22]
+
+Solution JSON saved to: /home/23037696r/Documents/research/or_benchmark/wp/results/inactivate_0.1/j20/j200101_3.json
+Finish time     : 2026-08-10T19:47:38+08:00

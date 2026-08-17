@@ -1,0 +1,63 @@
+
+Gurobi 13.0.2 (linux64) logging started Sat Aug 15 05:14:29 2026
+
+Set parameter LogFile to value "/home/23037696r/Documents/research/or_benchmark/wp/results/inactive_0.4/j20/logs/gurobi/j200104_5.log"
+Set parameter NumericFocus to value 1
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (linux64 - "Ubuntu 22.04.3 LTS")
+
+CPU model: Intel Xeon Processor (Cascadelake), instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 46 physical cores, 46 logical processors, using up to 2 threads
+
+Non-default parameters:
+TimeLimit  13800
+MIPGap  1e-06
+NumericFocus  1
+Threads  2
+
+Optimize a model with 3428 rows, 2918 columns and 13320 nonzeros (Min)
+Model fingerprint: 0xa91a0fe7
+Model has 1872 linear objective coefficients and an objective constant of 801.550214431375
+Variable types: 264 continuous, 2654 integer (2554 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [1e-02, 6e+02]
+  Bounds range     [1e+00, 1e+02]
+  RHS range        [1e+00, 1e+02]
+
+Presolve removed 2899 rows and 1809 columns
+Presolve time: 0.15s
+Presolved: 529 rows, 1109 columns, 5509 nonzeros
+Variable types: 0 continuous, 1109 integer (893 binary)
+Found heuristic solution: objective 2027.9067594
+
+Root relaxation: objective 1.505858e+03, 248 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1505.85839    0   46 2027.90676 1505.85839  25.7%     -    0s
+H    0     0                    1524.3258841 1505.85839  1.21%     -    0s
+H    0     0                    1523.5548458 1505.85839  1.16%     -    0s
+*    0     0               0    1521.4604403 1521.46044  0.00%     -    0s
+
+Cutting planes:
+  Learned: 1
+  Gomory: 2
+  Cover: 15
+  Implied bound: 6
+  Clique: 3
+  MIR: 3
+  StrongCG: 2
+  Flow cover: 1
+  Zero half: 2
+  RLT: 10
+  Relax-and-lift: 2
+  BQP: 1
+
+Explored 1 nodes (324 simplex iterations) in 0.31 seconds (0.08 work units)
+Thread count was 2 (of 46 available processors)
+
+Solution count 4: 1521.46 1523.55 1524.33 2027.91 
+
+Optimal solution found (tolerance 1.00e-06)
+Best objective 1.521460440281e+03, best bound 1.521460440281e+03, gap 0.0000%

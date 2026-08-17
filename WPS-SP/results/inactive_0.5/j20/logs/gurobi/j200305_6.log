@@ -1,0 +1,62 @@
+
+Gurobi 13.0.2 (linux64) logging started Sun Aug 16 00:28:08 2026
+
+Set parameter LogFile to value "/home/23037696r/Documents/research/or_benchmark/wp/results/inactive_0.5/j20/logs/gurobi/j200305_6.log"
+Set parameter NumericFocus to value 1
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (linux64 - "Ubuntu 22.04.3 LTS")
+
+CPU model: Intel Xeon Processor (Cascadelake), instruction set [SSE2|AVX|AVX2|AVX512]
+Thread count: 46 physical cores, 46 logical processors, using up to 2 threads
+
+Non-default parameters:
+TimeLimit  13800
+MIPGap  1e-06
+NumericFocus  1
+Threads  2
+
+Optimize a model with 2992 rows, 2556 columns and 11142 nonzeros (Min)
+Model fingerprint: 0x9c51bbcc
+Model has 1530 linear objective coefficients and an objective constant of 8.8443118980782151e+02
+Variable types: 280 continuous, 2276 integer (2178 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [1e-02, 5e+02]
+  Bounds range     [1e+00, 1e+02]
+  RHS range        [1e+00, 1e+02]
+
+Presolve removed 2532 rows and 1737 columns
+Presolve time: 0.11s
+Presolved: 460 rows, 819 columns, 4569 nonzeros
+Variable types: 0 continuous, 819 integer (610 binary)
+Found heuristic solution: objective 1900.3662540
+
+Root relaxation: objective 1.536865e+03, 246 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1536.86548    0   52 1900.36625 1536.86548  19.1%     -    0s
+H    0     0                    1898.1750337 1536.86548  19.0%     -    0s
+*    0     0               0    1550.9030235 1550.90302  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 11
+  Cover: 13
+  Implied bound: 11
+  Clique: 11
+  MIR: 5
+  StrongCG: 2
+  Flow cover: 1
+  GUB cover: 2
+  Zero half: 16
+  Network: 1
+  RLT: 5
+  Relax-and-lift: 11
+
+Explored 1 nodes (312 simplex iterations) in 0.21 seconds (0.07 work units)
+Thread count was 2 (of 46 available processors)
+
+Solution count 3: 1550.9 1898.18 1900.37 
+
+Optimal solution found (tolerance 1.00e-06)
+Best objective 1.550903023545e+03, best bound 1.550903023545e+03, gap 0.0000%

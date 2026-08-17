@@ -1,0 +1,292 @@
+{
+  "status_code": 2,
+  "objective": 1026.6837241149738,
+  "objective_bound": 1026.6837241149738,
+  "mip_gap": 0.0,
+  "deadline": 61,
+  "has_cycle": false,
+  "is_acyclic": true,
+  "cycle_check": {
+    "has_cycle": false,
+    "is_acyclic": true,
+    "package_precedence_edges": [
+      [
+        "A1",
+        "I17"
+      ],
+      [
+        "A1",
+        "I18"
+      ],
+      [
+        "A1",
+        "I22"
+      ],
+      [
+        "I1",
+        "A1"
+      ],
+      [
+        "I17",
+        "I22"
+      ],
+      [
+        "I18",
+        "I22"
+      ]
+    ],
+    "package_precedence_edge_count": 6,
+    "cyclic_package_ids": []
+  },
+  "packages": [
+    {
+      "package_id": "I1",
+      "package_type": "inactive_singleton",
+      "tasks": [
+        1
+      ],
+      "work_content": 0,
+      "start": 0,
+      "completion": 0
+    },
+    {
+      "package_id": "A1",
+      "package_type": "active",
+      "tasks": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        19,
+        20,
+        21
+      ],
+      "work_content": 145,
+      "start": 0,
+      "completion": 55
+    },
+    {
+      "package_id": "I18",
+      "package_type": "inactive_singleton",
+      "tasks": [
+        18
+      ],
+      "work_content": 2,
+      "start": 55,
+      "completion": 57
+    },
+    {
+      "package_id": "I17",
+      "package_type": "inactive_singleton",
+      "tasks": [
+        17
+      ],
+      "work_content": 8,
+      "start": 55,
+      "completion": 59
+    },
+    {
+      "package_id": "I22",
+      "package_type": "inactive_singleton",
+      "tasks": [
+        22
+      ],
+      "work_content": 0,
+      "start": 59,
+      "completion": 59
+    }
+  ],
+  "package_precedence_arcs": [
+    [
+      "A1",
+      "I17"
+    ],
+    [
+      "A1",
+      "I18"
+    ],
+    [
+      "A1",
+      "I22"
+    ],
+    [
+      "I1",
+      "A1"
+    ],
+    [
+      "I17",
+      "I22"
+    ],
+    [
+      "I18",
+      "I22"
+    ]
+  ],
+  "task_schedule": {
+    "1": {
+      "start": 0,
+      "finish": 0,
+      "duration": 0,
+      "work": 0,
+      "inactive": true
+    },
+    "2": {
+      "start": 0,
+      "finish": 1,
+      "duration": 1,
+      "work": 1,
+      "inactive": false
+    },
+    "3": {
+      "start": 1,
+      "finish": 5,
+      "duration": 4,
+      "work": 7,
+      "inactive": false
+    },
+    "4": {
+      "start": 5,
+      "finish": 13,
+      "duration": 8,
+      "work": 14,
+      "inactive": false
+    },
+    "5": {
+      "start": 13,
+      "finish": 21,
+      "duration": 8,
+      "work": 12,
+      "inactive": false
+    },
+    "6": {
+      "start": 21,
+      "finish": 29,
+      "duration": 8,
+      "work": 14,
+      "inactive": false
+    },
+    "7": {
+      "start": 0,
+      "finish": 9,
+      "duration": 9,
+      "work": 18,
+      "inactive": false
+    },
+    "8": {
+      "start": 29,
+      "finish": 35,
+      "duration": 6,
+      "work": 12,
+      "inactive": false
+    },
+    "9": {
+      "start": 35,
+      "finish": 39,
+      "duration": 4,
+      "work": 5,
+      "inactive": false
+    },
+    "10": {
+      "start": 39,
+      "finish": 44,
+      "duration": 5,
+      "work": 7,
+      "inactive": false
+    },
+    "11": {
+      "start": 44,
+      "finish": 47,
+      "duration": 3,
+      "work": 5,
+      "inactive": false
+    },
+    "12": {
+      "start": 47,
+      "finish": 51,
+      "duration": 4,
+      "work": 4,
+      "inactive": false
+    },
+    "13": {
+      "start": 51,
+      "finish": 53,
+      "duration": 2,
+      "work": 2,
+      "inactive": false
+    },
+    "14": {
+      "start": 53,
+      "finish": 55,
+      "duration": 2,
+      "work": 3,
+      "inactive": false
+    },
+    "15": {
+      "start": 45,
+      "finish": 55,
+      "duration": 10,
+      "work": 12,
+      "inactive": false
+    },
+    "16": {
+      "start": 50,
+      "finish": 55,
+      "duration": 5,
+      "work": 10,
+      "inactive": false
+    },
+    "17": {
+      "start": 55,
+      "finish": 59,
+      "duration": 4,
+      "work": 8,
+      "inactive": true
+    },
+    "18": {
+      "start": 55,
+      "finish": 57,
+      "duration": 2,
+      "work": 2,
+      "inactive": true
+    },
+    "19": {
+      "start": 0,
+      "finish": 3,
+      "duration": 3,
+      "work": 5,
+      "inactive": false
+    },
+    "20": {
+      "start": 0,
+      "finish": 4,
+      "duration": 4,
+      "work": 4,
+      "inactive": false
+    },
+    "21": {
+      "start": 0,
+      "finish": 10,
+      "duration": 10,
+      "work": 10,
+      "inactive": false
+    },
+    "22": {
+      "start": 59,
+      "finish": 59,
+      "duration": 0,
+      "work": 0,
+      "inactive": true
+    }
+  }
+}
